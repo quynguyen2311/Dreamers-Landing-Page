@@ -1,0 +1,11 @@
+:root{
+    --header-color: #0B3C88;
+    --my-font-style: "Roboto", serif;
+    --my-font-optical-sizing: auto;
+    --my-font-weight: 400; 
+    --my-font-variation-settings: "wdth" 100;
+    --my-CTA-button: #1E9DFF;
+    --under-herosection: #E8E8E8;
+    --blur-color: #C9C9C9;
+    --my-footer: #2A313B;
+}
