@@ -796,6 +796,11 @@ footer > p{
 @media (min-width: 300px) and (max-width: 700px) {
     html{
         font-size: 12px;
+        overflow-x: hidden;
+    }
+    body{
+        max-width: 700px;
+        overflow-x: hidden;
     }
     /* header */
     .header > div:nth-child(2), .header > div:nth-child(3){
@@ -944,11 +949,6 @@ footer > p{
     .achievement_content > div:nth-child(5){
         display: none;
     }
-    /* .achievement_content__child{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
     .reason_content{
         font-weight: 700;
         font-size: 25px;
