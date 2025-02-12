@@ -22,8 +22,13 @@ for(let i = 0; i < myElements.length; i++){
     })
 }
 
+var myButton = document.querySelector('.form--register--right > button');
+myButton.addEventListener('click',() => {
+    alert("Bạn da94 đăng ký thành công !");
+    alert("Chúng tôi sẽ liên hệ với bạn sớm qua email")
+})
+
 // ACHIEVE EFFECT
 let myAchieveElements = document.querySelectorAll('.achievement_content > div');
 
-// Gán các phần tử này vào 1 array 
-    
+
