@@ -26,4 +26,4 @@ for(let i = 0; i < myElements.length; i++){
 let myAchieveElements = document.querySelectorAll('.achievement_content > div');
 
 // Gán các phần tử này vào 1 array 
-
+    
