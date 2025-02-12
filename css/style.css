@@ -630,6 +630,15 @@ div>a:hover {
     height:67px;
     border-radius: 30px;
     background-color: var(--under-herosection);
+    display: flex;
+    align-items: center;
+    padding:0 1.875em;
+    gap: 5px;
+}
+.form--register--right > form > input{
+    outline: none;
+    border: none;
+    background-color: var(--under-herosection);
 }
 .form--register--right > form:nth-child(2){
     margin-top:32px;
@@ -694,9 +703,10 @@ footer > p{
     color: #1E9DFF;
 }
 .footer_info--left > h1{
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.563rem;
-    color: #FFFFFF
+    color: #FFFFFF;
+    line-height: 36px;
 }
 .footer_info--left > p:nth-child(2){
     font-weight: 400;
@@ -727,7 +737,7 @@ footer > p{
 }
 .footer_info--right{
     width: 500px;
-    height:300px;
+    height:max-content;
 }
 .footer_info--right_top{
     width:100%;
@@ -781,37 +791,6 @@ footer > p{
     margin: 2.5em 0;
 }
 /* RESPONSIVE */
-
-/* Màn hình điện thoại > 400px và <= 700px */
-/* @media (min-width: 401px) and (max-width: 700px){
-    html{
-        font-size:10px;
-    }
-
-    .header_top > img:nth-child(1){
-        display: flex;
-        margin-right: 1.25em;
-    }
-    .header_bottom{
-        display: none;
-    }
-    .header_bottomBar{
-        display: none;
-    }
-
-    .header_top--rightContent{
-        justify-content: flex-end;
-        gap: 1.25em;
-    }
-    .header_top--rightContent > form{
-        width: 200px;
-    }
-
-    .Herosection{
-        flex-direction: column;
-        align-items: center;
-    }
-} */
 
 /* Màn hình điên thọa */
 @media (min-width: 300px) and (max-width: 700px) {
@@ -940,28 +919,26 @@ footer > p{
     }
     
     /* achievement */
-    .achievement{
-        padding:0 10px;
-    }
     .achievement_title{
         font-weight: 700;
         font-size: 25px;
         line-height: 35px;
     }
-    .achievement_content {
-        
-    }
     .achievement_content > div:nth-child(2),
-    .achievement_content > div:nth-child(3)
+    .achievement_content > div:nth-child(3),
     .achievement_content > div:nth-child(4){
-        width:120px;
-        height:120px;
+        width:200px;
+        height:200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
     }
     .achievement_content > div:nth-child(2) > div,
     .achievement_content > div:nth-child(3) > div,
     .achievement_content > div:nth-child(4) > div{
-        width:120px;
-        height:120px;
+        width:130px;
+        height:130px;
     }
     .achievement_content > div:nth-child(1),
     .achievement_content > div:nth-child(5){
@@ -972,13 +949,6 @@ footer > p{
         flex-direction: column;
         align-items: center;
     } */
-    /* .achievement_content > div:nth-child(2){
-        margin-left:-75px;
-    }
-    .achievement_content > div:nth-child(3){
-        margin:0 60px;
-    } */
-    /* reason */
     .reason_content{
         font-weight: 700;
         font-size: 25px;
@@ -1025,7 +995,6 @@ footer > p{
     }
     /* thẻ form */
     .form{
-        
         padding:0.625rem 1.25em;
     }
     .form > h1{
@@ -1053,5 +1022,26 @@ footer > p{
     .form--register--right > form{
         height: 40px;
     }
-    
+    /* footer */
+    footer{
+        padding: 0.625em
+    }
+    .footer_logo{
+        display: flex;
+        justify-content: center;
+    }
+    .footer_logo > img{
+        width: 70px;
+        height:60px;
+    }
+    .footer_info{
+        flex-direction: column;
+    }
+    .footer_info--right_top{
+        flex-direction: column;
+        margin-top:20px;
+    }
+    iframe{
+        width: 300px;
+    }
 }
