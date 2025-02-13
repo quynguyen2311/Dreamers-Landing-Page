@@ -33,9 +33,7 @@ myMenu.addEventListener('click',(e)=>{
     e.stopPropagation();
 })
 // Khi click ở bất kì chỗ nào khác -> xóa class active
-document.addEventListener('click',() => {
-    if(!(myMenu.contains()))
-})
+
 
 // form register
 var myButton = document.querySelector('.form--register--right > button');
