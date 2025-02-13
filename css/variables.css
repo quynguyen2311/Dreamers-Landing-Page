@@ -9,3 +9,7 @@
     --blur-color: #C9C9C9;
     --my-footer: #2A313B;
 }
+.active{
+    visibility: visible;
+    opacity: 1;
+}

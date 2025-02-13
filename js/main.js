@@ -22,13 +22,27 @@ for(let i = 0; i < myElements.length; i++){
     })
 }
 
-var myButton = document.querySelector('.form--register--right > button');
-myButton.addEventListener('click',() => {
-    alert("Bạn da94 đăng ký thành công !");
-    alert("Chúng tôi sẽ liên hệ với bạn sớm qua email")
+// menu effect
+var myMenu = document.querySelector('.header_top > img:first-child');
+var myDiv = document.querySelector(".menu_herosection");
+// Khi click vào thẻ menu -> xuất hiện class active
+myMenu.addEventListener('click',(e)=>{
+    // thêm class vào nếu đã có, xóa class đi nếu chưa có 
+    myDiv.classList.toggle('active');
+    // Ngắn sự kiện lan ra ngoài
+    e.stopPropagation();
+})
+// Khi click ở bất kì chỗ nào khác -> xóa class active
+document.addEventListener('click',() => {
+    if(!(myMenu.contains()))
 })
 
-// ACHIEVE EFFECT
-let myAchieveElements = document.querySelectorAll('.achievement_content > div');
+// form register
+var myButton = document.querySelector('.form--register--right > button');
+console.log(myButton);
+myButton.addEventListener('click',(e) => {
+    alert("Bạn đã đăng ký thành công !");
+    alert("Chúng tôi sẽ liên hệ với bạn sớm qua email");
+});
 
 

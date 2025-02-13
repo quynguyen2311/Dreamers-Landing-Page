@@ -1,4 +1,5 @@
 @import url(./variables.css);
+@import url(./mobile.css);
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +17,10 @@ html{
     width: 100vw;
     font-size: 16px; 
     overflow-x: hidden;
+    overflow-y: scroll;
+}
+html::-webkit-scrollbar{
+    display: none;
 }
 body {
     height: 100%;
@@ -157,8 +162,19 @@ div>a:hover {
     padding: 3.75em 6.25em;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index:1;
 }
-
+.menu_herosection{
+    width: 40%;
+    height: 100%;
+    background-color: red;
+    position:absolute;
+    z-index:3;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
 .Herosection__leftContent--header {
     min-width: 646px;
     font-weight: 700;
@@ -400,7 +416,8 @@ div>a:hover {
     width: 100%;
     height: max-content;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap:5%;
     margin-top:2.5em;
     overflow: hidden;
 }
@@ -789,259 +806,4 @@ footer > p{
 }
 .footer_info--des{
     margin: 2.5em 0;
-}
-/* RESPONSIVE */
-
-/* Màn hình điên thọa */
-@media (min-width: 300px) and (max-width: 700px) {
-    html{
-        font-size: 12px;
-        overflow-x: hidden;
-    }
-    body{
-        max-width: 700px;
-        overflow-x: hidden;
-    }
-    /* header */
-    .header > div:nth-child(2), .header > div:nth-child(3){
-        display: none;
-    }
-    .header_top{
-        justify-content: unset;
-    }
-    .header_top--rightContent > button{
-        display: none;
-    }
-    .header_top > img:nth-child(1){
-        display: flex;
-        width: 25px;
-        height: 25px;
-    }
-    .header_top > img:nth-child(2){
-        width: 40px;
-        height: 35px;
-        margin-left:0.625em;
-        margin-right: 5em;
-    }
-    .header_top--rightContent{
-        width: 80%;
-        margin-left:auto;
-    }
-    .header_top--rightContent > form{
-        width: 100%;
-        height:18px;
-    }
-    /* Herosection */
-    .Herosection{
-        flex-direction: column;
-
-    }
-    .Herosection > img{
-        width:300px;
-        height:360px;
-        margin: 20px 0 0 0;
-    }
-    .Herosection__leftContent{
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        
-    }
-    .Herosection__leftContent--header{
-        min-width: max-content;
-        font-weight: 700;
-        font-size:30px;
-        line-height: 5.313rem;
-    }
-    .Herosection__leftContent--underhead{
-        font-weight: 400;
-        font-size:15px;
-        line-height: 20px;  
-    }
-    .Herosection__leftContent > button{
-        margin-top: 15px;
-    }
-    .Herosection__leftContent--onhead{
-        font-weight: 300;
-        font-size:10px;
-        line-height: 20px;  
-    }
-    /* Classes */
-    .classList__classes{
-        padding: 3.75em 6.25em;
-        flex-direction: column;
-        align-items: center;
-    }
-    .classList__classes > div{
-        margin-bottom:1.875em;
-    }
-    .classList__classes--1 > img,
-    .classList__classes--2 > img{
-        width:300px;
-    }
-    /* Herosection 2 */
-    .herosection_2{
-        flex-direction: column;
-        align-items: center;
-    }
-    .herosection_2 > img{
-        width: 300px;
-        height:360px;
-    }
-    .herosection_2__content > div{
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 35px;
-    }
-    /* courses features */
-    .courses_feature{
-        padding: 20px 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .courses_feature--content{
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 35px;
-    }
-    .courses_feature--classList{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 300px;
-        transform: none;
-        flex-wrap: wrap;
-        margin-top:0;
-    }
-    .courses_feature--classList > div{
-        transform: none;
-        width:45%;
-        margin-top:30px;
-        height:max-content;
-        padding:10px 10px;
-    }
-    
-    /* achievement */
-    .achievement_title{
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 35px;
-    }
-    .achievement_content > div:nth-child(2),
-    .achievement_content > div:nth-child(3),
-    .achievement_content > div:nth-child(4){
-        width:200px;
-        height:200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: max-content;
-    }
-    .achievement_content > div:nth-child(2) > div,
-    .achievement_content > div:nth-child(3) > div,
-    .achievement_content > div:nth-child(4) > div{
-        width:130px;
-        height:130px;
-    }
-    .achievement_content > div:nth-child(1),
-    .achievement_content > div:nth-child(5){
-        display: none;
-    }
-    .reason_content{
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 54px;
-        color: var(--header-color);
-    }
-    .reason_list{
-        flex-direction: column;
-        margin: unset;
-        padding: unset;
-        align-items: center;
-    }
-    .reason_list  > div{
-        width:300px;
-        height: max-content;
-        margin-top:20px;
-    }
-    /* teacher incharge */
-    .teacher_incharge--card{
-        flex-direction: column;
-        align-items: center;
-    }
-    .teacher_incharge--card_KD > img{
-        width:300px;
-    }
-    .teacher_incharge--card > div{
-        display: flex;
-        justify-content: center;
-    }
-    .teacher_incharge--card_KV > img{
-        width: 300px;
-    }
-    .teacher_incharge--content{
-        font-weight: 700;
-        font-size: 25px;
-        color: #0B3C88;
-    }
-    .teacher_incharge{
-        padding:10px 40px;
-    }
-    .teacher_incharge > button{
-        width:300px;
-        padding:10px 20px;
-    }
-    /* thẻ form */
-    .form{
-        padding:0.625rem 1.25em;
-    }
-    .form > h1{
-        min-width: max-content;
-        font-weight: 700;
-        font-size: 20px;
-        width: 300px;
-    }
-    .form--register{
-        flex-direction: column;
-
-    }
-    .form--register--left{
-        display: none;
-    }
-    .form--register--right{
-        width: max-content;
-        border-radius: 30px;
-    }
-    .form--register--right > h1{
-        min-width: max-content;
-        font-weight: 700;
-        font-size: 30px;
-    }
-    .form--register--right > form{
-        height: 40px;
-    }
-    /* footer */
-    footer{
-        padding: 0.625em
-    }
-    .footer_logo{
-        display: flex;
-        justify-content: center;
-    }
-    .footer_logo > img{
-        width: 70px;
-        height:60px;
-    }
-    .footer_info{
-        flex-direction: column;
-    }
-    .footer_info--right_top{
-        flex-direction: column;
-        margin-top:20px;
-    }
-    iframe{
-        width: 300px;
-    }
 }
