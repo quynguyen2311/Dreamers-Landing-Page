@@ -396,7 +396,10 @@ div>a:hover {
     line-height: 1.5rem;
     color: var(--header-color);
 }
-
+.courses_feature--class > img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
 /* achievement */
 .achievement{
     width: 100%;
