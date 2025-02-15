@@ -40,7 +40,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75em 2.188em;
+    padding: 0.75em 2.188em 0.75em 2.188em;
 }
 .header_top > img:nth-child(1){
     display: none;
@@ -112,7 +112,7 @@ body {
 div>a {
     color: white;
     text-decoration: none;
-    transition: transform;
+    transition: transform 0.15s ease-in-out;
 }
 
 .header_bottom>a:hover,
@@ -160,20 +160,25 @@ div>a:hover {
 .Herosection {
     display: flex;
     padding: 3.75em 6.25em;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
     z-index:1;
+    gap:1.429em;
 }
 .menu_herosection{
-    width: 40%;
+    width: 100%;
     height: 100%;
-    background-color: red;
+    border-top: 2px solid white;
+    background-color: var(--header-color);
     position:absolute;
     z-index:3;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.15s ease-in-out;
+}
+.Herosection__leftContent > div{
+    max-width: max-content;
 }
 .Herosection__leftContent--header {
     min-width: 646px;
@@ -252,7 +257,8 @@ div>a:hover {
 .classList__classes {
     display: flex;
     padding: 3.063rem 10.875rem;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2.143em;
 }
 
 .classList__classes--1 {
@@ -318,7 +324,8 @@ div>a:hover {
 /* Herosection 2 */
 .herosection_2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap:2.857em;
     align-items: center;
     padding: 3.75em 6.25em;
 }
@@ -487,7 +494,8 @@ div>a:hover {
     width: 100%;
     height:max-content;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap:2.857em;
     padding:0 9.063em;
     margin-top: 1.875em;
 }
@@ -570,8 +578,17 @@ div>a:hover {
     justify-content: space-between;
     margin-top: 1.625em;
 }
+.teacher_incharge--card_KD > a > img,
+.teacher_incharge--card_KV > a > img{
+    transition: transform 0.2s ease-in-out;
+}
+.teacher_incharge--card_KV > a > img:hover,
+.teacher_incharge--card_KD > a > img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
 .teacher_incharge--card > div{
-    width: 400px;
+    width: max-content;
     height: max-content;
 }
 .teacher_incharge--button{
@@ -708,6 +725,7 @@ footer{
     height: max-content;
     display: flex;
     justify-content: space-between;
+    gap:2.143em;
     border-bottom:2px solid #5E5E5E;
     margin-top:0.938em;
     padding-bottom:0.938em;

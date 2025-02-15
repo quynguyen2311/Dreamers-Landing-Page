@@ -34,7 +34,6 @@ myMenu.addEventListener('click',(e)=>{
 })
 // Khi click ở bất kì chỗ nào khác -> xóa class active
 
-
 // form register
 var myButton = document.querySelector('.form--register--right > button');
 console.log(myButton);
@@ -43,4 +42,16 @@ myButton.addEventListener('click',(e) => {
     alert("Chúng tôi sẽ liên hệ với bạn sớm qua email");
 });
 
-
+// ScrollintoView
+// biến chưa tất cả các button của trang
+var buttons = document.getElementsByTagName('button');
+for(let i = 0; i < buttons.length; i++){
+    if(buttons[i].className == 'teacher_incharge--button') 
+        continue;
+    buttons[i].addEventListener('click',()=>{
+        document.querySelector('.form--register').scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        }); 
+    })
+}

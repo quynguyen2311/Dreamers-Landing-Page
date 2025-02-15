@@ -2,281 +2,338 @@
 @import url(./variables.css);
 /* RESPONSIVE CHO ĐIỆN THOẠI */
 @media (min-width: 300px) and (max-width: 700px) {
-    html{
+    html {
         font-size: 12px;
         overflow-x: hidden;
     }
-    body{
+
+    body {
         max-width: 700px;
         overflow-x: hidden;
     }
+
     /* header */
-    .header > div:nth-child(2), .header > div:nth-child(3){
+    .header>div:nth-child(2),
+    .header>div:nth-child(3) {
         display: none;
     }
-    .header_top{
+
+    .header_top {
         justify-content: unset;
-        padding:0.75em 1em;
+        padding: 0.75em 1em;
     }
-    .header_top--rightContent > button{
+
+    .header_top--rightContent>button {
         display: none;
     }
-    .header_top > img:nth-child(1){
+
+    .header_top>img:nth-child(1) {
         display: flex;
         width: 25px;
         height: 25px;
         transition: transform 0.2s ease-in-out;
     }
-    .header_top > img:nth-child(1):hover{
+
+    .header_top>img:nth-child(1):hover {
         cursor: pointer;
         transform: scale(1.2);
     }
-    .header_top > img:nth-child(2){
+
+    .header_top>img:nth-child(2) {
         width: 40px;
         height: 35px;
-        margin-left:0.938em;
+        margin-left: 0.938em;
         margin-right: 5em;
     }
-    .header_top--rightContent{
+
+    .header_top--rightContent {
         width: 80%;
-        margin-left:auto;
+        margin-left: auto;
     }
-    .header_top--rightContent > form{
+
+    .header_top--rightContent>form {
         width: 100%;
-        height:18px;
+        height: 18px;
     }
+
     /* Herosection */
-    .Herosection{
+    .Herosection {
         flex-direction: column;
 
     }
-    .Herosection > img{
-        width:300px;
-        height:360px;
+
+    .Herosection>img {
+        width: 300px;
+        height: 360px;
         margin: 20px 0 0 0;
     }
-    .Herosection__leftContent{
+
+    .Herosection__leftContent {
         width: 300px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
     }
-    .Herosection__leftContent--header{
+    .Herosection__leftContent--header {
         min-width: max-content;
-        font-weight: 700;
-        font-size:30px;
+        font-weight: 900;
+        font-size: 30px;
         line-height: 5.313rem;
     }
-    .Herosection__leftContent--underhead{
+
+    .Herosection__leftContent--underhead {
         font-weight: 400;
-        font-size:15px;
-        line-height: 20px;  
+        font-size: 15px;
+        line-height: 20px;
     }
-    .Herosection__leftContent > button{
+
+    .Herosection__leftContent>button {
         margin-top: 15px;
     }
-    .Herosection__leftContent--onhead{
+
+    .Herosection__leftContent--onhead {
         font-weight: 300;
-        font-size:10px;
-        line-height: 20px;  
+        font-size: 10px;
+        line-height: 20px;
     }
+
     /* Classes */
-    .classList__classes{
+    .classList__classes {
         padding: 3.75em 6.25em;
         flex-direction: column;
         align-items: center;
     }
-    .classList__classes > div{
-        margin-bottom:1.875em;
+
+    .classList__classes>div {
+        margin-bottom: 1.875em;
     }
-    .classList__classes--1 > img,
-    .classList__classes--2 > img{
-        width:300px;
+
+    .classList__classes--1>img,
+    .classList__classes--2>img {
+        width: 300px;
     }
+
     /* Herosection 2 */
-    .herosection_2{
+    .herosection_2 {
         flex-direction: column;
         align-items: center;
     }
-    .herosection_2 > img{
+
+    .herosection_2>img {
         width: 300px;
-        height:360px;
+        height: 360px;
     }
-    .herosection_2__content > div{
+
+    .herosection_2__content>div {
         font-weight: 700;
         font-size: 30px;
         line-height: 35px;
     }
+
     /* courses features */
-    .courses_feature{
+    .courses_feature {
         padding: 20px 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .courses_feature--content{
+
+    .courses_feature--content {
         font-weight: 700;
         font-size: 25px;
         line-height: 35px;
     }
-    .courses_feature--classList{
+
+    .courses_feature--classList {
         display: flex;
         justify-content: space-between;
         width: 100%;
         height: 300px;
         transform: none;
         flex-wrap: wrap;
-        margin-top:0;
+        margin-top: 0;
     }
-    .courses_feature--classList > div{
+
+    .courses_feature--classList>div {
         transform: none;
-        width:45%;
-        margin-top:30px;
-        height:max-content;
-        padding:10px 10px;
+        width: 45%;
+        margin-top: 30px;
+        height: max-content;
+        padding: 10px 10px;
     }
-    
+
     /* achievement */
-    .achievement_content{
-        gap:10%;
+    .achievement_content {
+        gap: 10%;
     }
-    .achievement_title{
+
+    .achievement_title {
         font-weight: 700;
         font-size: 25px;
         line-height: 35px;
     }
-    .achievement_content > div:nth-child(2),
-    .achievement_content > div:nth-child(3),
-    .achievement_content > div:nth-child(4){
-        width:200px;
-        height:200px;
+
+    .achievement_content>div:nth-child(2),
+    .achievement_content>div:nth-child(3),
+    .achievement_content>div:nth-child(4) {
+        width: 200px;
+        height: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
         height: max-content;
     }
-    .achievement_content > div:nth-child(2) > div,
-    .achievement_content > div:nth-child(3) > div,
-    .achievement_content > div:nth-child(4) > div{
-        width:130px;
-        height:130px;
+
+    .achievement_content>div:nth-child(2)>div,
+    .achievement_content>div:nth-child(3)>div,
+    .achievement_content>div:nth-child(4)>div {
+        width: 130px;
+        height: 130px;
     }
-    .achievement_content > div:nth-child(1),
-    .achievement_content > div:nth-child(5){
+
+    .achievement_content>div:nth-child(1),
+    .achievement_content>div:nth-child(5) {
         display: none;
     }
-    .reason_content{
+
+    .reason_content {
         font-weight: 700;
         font-size: 25px;
         line-height: 54px;
         color: var(--header-color);
     }
-    .reason_list{
+
+    .reason_list {
         flex-direction: column;
         margin: unset;
         padding: unset;
         align-items: center;
     }
-    .reason_list  > div{
-        width:300px;
+
+    .reason_list>div {
+        width: 300px;
         height: max-content;
-        margin-top:20px;
+        margin-top: 20px;
     }
+
     /* teacher incharge */
-    .teacher_incharge--card{
+    .teacher_incharge--card {
         flex-direction: column;
         align-items: center;
     }
-    .teacher_incharge--card_KD > img{
-        width:300px;
+
+    .teacher_incharge--card_KD> a > img {
+        width: 300px;
     }
-    .teacher_incharge--card > div{
+
+    .teacher_incharge--card > div {
         display: flex;
         justify-content: center;
     }
-    .teacher_incharge--card_KV > img{
+
+    .teacher_incharge--card_KV > a > img {
         width: 300px;
     }
-    .teacher_incharge--content{
+
+    .teacher_incharge--content {
         font-weight: 700;
         font-size: 25px;
         color: #0B3C88;
     }
-    .teacher_incharge{
-        padding:10px 40px;
+
+    .teacher_incharge {
+        padding: 10px 40px;
     }
-    .teacher_incharge > button{
-        width:300px;
-        padding:10px 20px;
+
+    .teacher_incharge>button {
+        width: 300px;
+        padding: 10px 20px;
     }
+
     /* thẻ form */
-    .form{
-        padding:0.625rem 1.25em;
+    .form {
+        padding: 0.625rem 1.25em;
     }
-    .form > h1{
+
+    .form>h1 {
         min-width: max-content;
         font-weight: 700;
         font-size: 20px;
         width: 300px;
     }
-    .form--register{
+
+    .form--register {
         flex-direction: column;
 
     }
-    .form--register--left{
+
+    .form--register--left {
         display: none;
     }
-    .form--register--right{
+
+    .form--register--right {
         width: max-content;
         border-radius: 30px;
     }
-    .form--register--right > h1{
+
+    .form--register--right>h1 {
         min-width: max-content;
         font-weight: 700;
         font-size: 30px;
     }
-    .form--register--right > form{
+
+    .form--register--right>form {
         height: 40px;
     }
+
     /* footer */
-    footer{
+    footer {
         padding: unset;
     }
-    .footer_logo{
+
+    .footer_logo {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .footer_logo > img{
+
+    .footer_logo>img {
         width: 60px;
         height: 50px;
     }
-    .footer_info{
+
+    .footer_info {
         flex-direction: column;
         align-items: center;
     }
-    iframe{
-        width:300px;
-    }
-    .footer_info{
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer_info--left{
-        width:300px;
-    }
-    .footer_info--right{
+
+    iframe {
         width: 300px;
     }
-    .footer_info--right
-    .footer_info--left > h1{
+
+    .footer_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_info--left {
+        width: 300px;
+    }
+
+    .footer_info--right {
+        width: 300px;
+    }
+
+    .footer_info--right .footer_info--left>h1 {
         margin: auto;
     }
-    .footer_info--right_top{
-        gap:20px;
+
+    .footer_info--right_top {
+        margin-top: 1.25em;
+        gap: 1.25em;
     }
-    .footer_info--right{
+
+    .footer_info--right {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -285,97 +342,146 @@
 
 /* Responsive chho tablet */
 @media (min-width:700px) and (max-width: 1200px) {
-    html{
+    html {
         font-size: 14px;
     }
+
     /* Header */
-    .header_bottom{
+    .header{
+        padding:1.5em 0;
+    }
+    .header_bottom {
         display: none;
     }
-    .header_bottomBar{
+
+    .header_bottomBar {
         display: none;
     }
-    .header_top{
+
+    .header_top {
         justify-content: space-between;
     }
-    .header_top > img:nth-child(2){
+
+    .header_top>img:nth-child(2) {
         position: absolute;
-        left:6em;   
+        left: 6em;
     }
-    .header_top > img:nth-child(1){
+
+    .header_top>img:nth-child(1) {
         display: flex;
         transition: transform 0.2s ease-in-out;
     }
-    .header_top > img:nth-child(1):hover{
+
+    .header_top>img:nth-child(1):hover {
         transform: scale(1.15);
         cursor: pointer;
     }
+
     /* Herosection content */
-    .Herosection{
+    .Herosection {
         flex-direction: column;
     }
-    .Herosection__leftContent--onhead{
+
+    .Herosection__leftContent {
+        align-items: center;
+    }
+
+    .Herosection__leftContent--onhead {
         font-weight: 400;
         font-size: 1.643rem;
     }
-    .Herosection__leftContent--header{
+
+    .Herosection__leftContent--header {
         font-weight: 700;
         font-size: 4.643rem;
+        min-width: none;
     }
+
     /* classList */
-    .classList__classes{
+    .classList__classes {
         flex-direction: column;
         align-items: center;
     }
-    .classList__classes--2{
-        margin-top:1.875em;
+
+    .classList__classes--2 {
+        margin-top: 1.875em;
     }
-    .herosection_2{
+
+    .herosection_2 {
         flex-direction: column;
     }
+
     /* courses features */
-    .courses_feature{
+    .courses_feature {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .courses_feature--classList{
-        gap:20px;
+
+    .courses_feature--classList {
+        gap: 20px;
     }
-    .courses_feature--class{
+
+    .courses_feature--class {
         flex: 1 1 200px;
-        min-width:100px;
+        min-width: 100px;
     }
+
     /* Reason */
-    .reason_list{
+    .reason_list {
         flex-direction: column;
         align-items: center;
     }
-    .reason_list--no{
+
+    .reason_list--no {
         margin-top: 1.25em;
     }
-    /* Form register */
-    .form--register--left > img{
-        height:558px;
+
+    /* teacher incharge */
+    .teacher_incharge--card {
+        /* gap:1.429em;  */
     }
+
+    .teacher_incharge--card_KD> a > img,
+    .teacher_incharge--card_KV> a > img {
+        width: 300px;
+    }
+
+    /* Form register */
+    .form--register--left {
+        display: none;
+    }
+
+    .form--register--right {
+        width: 100%;
+        border-radius: 30px;
+    }
+    .form>h1 {
+        font-size: 2.5rem;
+    }
+
     /* footer */
-    .footer_logo{
+    .footer_logo {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .footer_info{
+
+    .footer_info {
         flex-direction: column;
         align-items: center;
     }
-    .footer_info--left{
-        margin-top:50px;
+
+    .footer_info--left {
+        margin-top: 50px;
     }
-    .footer_info--left > h1{
+
+    .footer_info--left>h1 {
         max-width: max-content;
-        margin:auto;
+        margin: auto;
     }
-    .footer_info--right_top{
+
+    .footer_info--right_top {
         margin-top: 1.875em;
     }
 }
